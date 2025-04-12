@@ -11,7 +11,7 @@ export function Greeting() {
 
   useEffect(() => {
     const currentHour = new Date().getHours();
-    if (currentHour > 6 && currentHour <= 14) {
+    if (currentHour >= 6 && currentHour <= 14) {
       setGreetingMessage(greeting.morning);
     } else if (currentHour > 14 && currentHour <= 19) {
       setGreetingMessage(greeting.late);
