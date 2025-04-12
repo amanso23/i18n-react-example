@@ -18,6 +18,7 @@ export function Greeting() {
     } else {
       setGreetingMessage(greeting.night);
     }
+    document.documentElement.lang = lang;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lang]);
 
